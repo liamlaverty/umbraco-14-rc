@@ -3,13 +3,13 @@
 
 ```bash
 # Ensure we have the version specific Umbraco templates
-dotnet new install Umbraco.Templates::14.0.0-rc1 --force
+dotnet new install Umbraco.Templates::14.0.0-rc2 --force
 
 # Create solution/project
-dotnet new sln --name "UmbRc14TestSolution"
-dotnet new umbraco --force -n "UmbRc14TestProject" --friendly-name "Administrator" --email "" --password "" --development-database-type SQLite
-dotnet sln add "UmbRc14TestProject"
+dotnet new sln --name "UmbRc14_rc2_TestSolution"
+dotnet new umbraco --force -n "UmbRc14_rc2_TestProject" --friendly-name "Administrator" --email "" --password "1234567890@!" --development-database-type SQLite
+dotnet sln add "UmbRc14_rc2_TestProject"
 
-dotnet run --project "UmbRc14TestProject"
+dotnet run --project "UmbRc14_rc2_TestProject"
 #Running
 ```
